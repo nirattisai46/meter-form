@@ -229,7 +229,7 @@ $('#pdf').onclick=async()=>{
  }finally{if(host)host.remove();btn.disabled=false}
 };
 // ====== ตั้งค่า: วาง URL ของ Google Apps Script (ลงท้ายด้วย /exec) ======
-const SHEET_URL='PASTE_YOUR_WEB_APP_URL_HERE';
+const SHEET_URL='https://script.google.com/macros/s/AKfycby1i5FqXmauc2HvHGVi0f6R6vdojKWfk4_rGDObKFRzU_Pn3ZYePZeMx6dDjnSb3ey32w/exec';
 $('#snd').onclick=async()=>{
  if(SHEET_URL.startsWith('PASTE')){msg('ยังไม่ได้ตั้งค่า SHEET_URL ในไฟล์ index.html');return}
  if(!v('fn')&&!v('ca')){msg('กรอกชื่อหรือหมายเลขผู้ใช้ไฟก่อนส่ง');return}
